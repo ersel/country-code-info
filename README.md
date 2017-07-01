@@ -10,7 +10,7 @@ Num: Numeric codes from ISO 3166-1
 ITU: Codes assigned by the International Telecommunications Union
 GEC: Codes from the U.S. standard GEC
 IOC: Codes assigned by the International Olympics Committee . These codes identify the nationality of athletes and teams during Olympic events.
-FIFA: Codes assigned by the Fédération Internationale de Football Association 
+FIFA: Codes assigned by the Fédération Internationale de Football Association
 DS: Distinguishing signs of vehicles in international traffic (oval bumper sticker codes)
 WMO: Country abbreviations used in weather reports from the World Meteorological Organization
 GAUL: Global Administrative Unit Layers from the Food and Agriculture Organization
@@ -22,7 +22,7 @@ argue about it. For full details, please consult your favorite official source.
 Data was gathered from [http://www.statoids.com/wab.html](http://www.statoids.com/wab.html)
 
 # Installation
-`npm install country-codes --save`
+`npm install country-code-info --save`
 
 # Usage
 ```
@@ -58,7 +58,7 @@ let uk = CountryCodes.findCountry({'fifa': 'eng'});
 let uk = CountryCodes.findCountry({'dial': '44'});
 ```
 
-# Notes 
+# Notes
 
 If a country is not found, a `null` object is returned.
 
