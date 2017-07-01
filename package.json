@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "nyc ava",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "precommit": "npm run lint",
+    "prepush": "npm test"
   },
   "repository": {
     "type": "git",
@@ -29,6 +31,7 @@
   "devDependencies": {
     "ava": "^0.20.0",
     "eslint": "^4.1.1",
+    "husky": "^0.14.2",
     "nyc": "^11.0.3"
   }
 }
