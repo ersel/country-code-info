@@ -1,0 +1,34 @@
+{
+  "name": "country-codes",
+  "version": "0.0.1",
+  "description": "A library to get country information in various standards.",
+  "main": "index.js",
+  "scripts": {
+    "test": "nyc ava",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ersel/country-codes.git"
+  },
+  "keywords": [
+    "country",
+    "codes",
+    "iso",
+    "gec",
+    "fips",
+    "fifa",
+    "dial"
+  ],
+  "author": "Ersel Aker",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/ersel/country-codes/issues"
+  },
+  "homepage": "https://github.com/ersel/country-codes#readme",
+  "devDependencies": {
+    "ava": "^0.20.0",
+    "eslint": "^4.1.1",
+    "nyc": "^11.0.3"
+  }
+}
