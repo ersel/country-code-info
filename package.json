@@ -1,5 +1,5 @@
 {
-  "name": "country-codes",
+  "name": "country-code-info",
   "version": "0.0.1",
   "description": "A library to get country information in various standards.",
   "main": "index.js",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ersel/country-codes.git"
+    "url": "git+https://github.com/ersel/country-code-info.git"
   },
   "keywords": [
     "country",
@@ -25,9 +25,9 @@
   "author": "Ersel Aker",
   "license": "Unlicense",
   "bugs": {
-    "url": "https://github.com/ersel/country-codes/issues"
+    "url": "https://github.com/ersel/country-code-info/issues"
   },
-  "homepage": "https://github.com/ersel/country-codes#readme",
+  "homepage": "https://github.com/ersel/country-code-info#readme",
   "devDependencies": {
     "ava": "^0.20.0",
     "eslint": "^4.1.1",
