@@ -47,3 +47,22 @@ test('try mixed case key value pairs, should still be able to return correct cou
 	let uk = CountryCodes.findCountry({'FIFA': 'sco'});
 	t.deepEqual(uk, ukFixture);
 });
+
+// testing the exact match
+test('search for a country using short DS code', t => {
+	let uk = CountryCodes.findCountryExact({'ds': 'GB'});
+	t.deepEqual(uk, ukFixture);
+});
+
+test('try searching with an invalid key', t => {
+	t.throws(() => CountryCodes.findCountryExact({'no-such-key': 'blah'}));
+});
+
+test('try searching with an invalid searchterm', t => {
+	t.throws(() => CountryCodes.findCountryExact('hello error'));
+});
+
+test('no such country', t => {
+	let na = CountryCodes.findCountryExact({'name': 'Mythical Unicorn Land'});
+	t.deepEqual(na, null);
+});

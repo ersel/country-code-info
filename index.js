@@ -53,6 +53,30 @@ function findCountry(searchTerm) {
 	}
 }
 
+function findCountryExact(searchTerm) {
+	if(isObject(searchTerm)){
+		let keyOriginal = Object.keys(searchTerm)[0];
+		let key = new String(Object.keys(searchTerm)[0]).toLowerCase();
+		let value = new String(searchTerm[keyOriginal]).toLowerCase();
+		if(isValidKey(key)){
+			for(let i = 0; i < countries.length; i++){
+				let searchedKey = countries[i][key].toLowerCase();
+				if(searchedKey === value){
+					return countries[i];
+				}
+			}
+			return null;
+		}
+		else {
+			throw new Error('invalid key');
+		}
+	}
+	else {
+		throw new Error('invalid search term, should be an object with a single key:value pair');
+	}
+}
+
 module.exports = {
-	findCountry
+	findCountry,
+	findCountryExact
 };
