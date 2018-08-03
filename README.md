@@ -58,10 +58,9 @@ let uk = CountryCodes.findCountry({'fifa': 'eng'});
 let uk = CountryCodes.findCountry({'dial': '44'});
 
 // if you need to match exactly the string you pass in
-// the value, you can use this function instead.
-// This is useful above all for codes with a variable
-// number of digits. Example:
-let uk = CountryCodes.findCountryExact({'ds': 'gb'});
+// as the search term, you can pass in a second argument
+// to findCountry function which will enable exact match.
+let uk = CountryCodes.findCountry({'ds': 'gb'}, true); // exact match
 ```
 
 # Notes
