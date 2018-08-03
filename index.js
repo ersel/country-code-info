@@ -30,7 +30,7 @@ function isValidKey(key) {
 	}
 }
 
-function findCountry(searchTerm) {
+function findCountry(searchTerm, exact) {
 	if(isObject(searchTerm)){
 		let keyOriginal = Object.keys(searchTerm)[0];
 		let key = new String(Object.keys(searchTerm)[0]).toLowerCase();
@@ -38,7 +38,10 @@ function findCountry(searchTerm) {
 		if(isValidKey(key)){
 			for(let i = 0; i < countries.length; i++){
 				let searchedKey = countries[i][key].toLowerCase();
-				if(searchedKey.indexOf(value) > -1){
+				if(exact && searchedKey === value) {
+					return countries[i];
+				}
+				if(!exact && searchedKey.indexOf(value) > -1){
 					return countries[i];
 				}
 			}

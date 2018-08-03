@@ -56,6 +56,11 @@ let uk = CountryCodes.findCountry({'name': 'United Kingdom'});
 // examples showing searching by various data fields
 let uk = CountryCodes.findCountry({'fifa': 'eng'});
 let uk = CountryCodes.findCountry({'dial': '44'});
+
+// if you need to match exactly the string you pass in
+// as the search term, you can pass in a second argument
+// to findCountry function which will enable exact match.
+let uk = CountryCodes.findCountry({'ds': 'gb'}, true); // exact match
 ```
 
 # Notes
