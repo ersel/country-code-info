@@ -1,6 +1,6 @@
 {
   "name": "country-code-info",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "A library to get country information in various standards.",
   "main": "index.js",
   "scripts": {
